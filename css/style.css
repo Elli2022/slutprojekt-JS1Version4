@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: rgb(50, 47, 47);
+    
+    margin: 0px;
+    /* width: 50px; */
+    text-align: center;
+    cursor: pointer;
+    justify-content: center;
+    height: 100vh;
+    color: whitesmoke
+    
+
+}
+
+header{
+  margin-top: 50px;
+  font-size: 48px;
+}
+form{
+  margin-top: 70px;
+}
+
+
+/* #divAnimation {
+    display: inline-block;
+    transform: translateZ(0px);
+  }
+  #divAnimation {
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    background: #fff;
+    animation: divAnimation 2.4s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+  }
+  @keyframes divAnimation {
+    0%, 100% {
+      animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+    }
+    0% {
+      transform: rotateY(0deg);
+    }
+    50% {
+      transform: rotateY(1800deg);
+      animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+    }
+    100% {
+      transform: rotateY(3600deg);
+    }
+  } */
+  
+
+#divAnimation{
+    margin-top: 40px;
+    
+} 
+img {
+    margin: 20px;
+    object-fit: cover;
+
+}
+
+/*Egenskaper som sker enbart om man klickar på vald bild/bilder*/
+.selectedImages {
+    margin: 80px;
+    border: 5px solid rebeccapurple;
+    
+    /* transform: scale(1.2); */
+    display: block;
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+
+
+.image-container{
+    display: flex;
+    transform: translateX(0);
+    transition: transform 0.5s;
+}
+
+.carousel {
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    margin: 20px;
+    /*lägger till en scroll-bar*/
+    overflow-x: auto;
+    height: auto;
+    width: 1300px;
+    padding-right: -20px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+}
+
+.buttons-container {
+
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.btn {
+    background-color: rebeccapurple;
+    color:#fff;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    width: 39.5%;
+}
+
+button:active {
+    transform: translateY(-3px);
+    background-color: green;
+  }
+
+.btn:hover {
+    opacity: 0.9;
+    
+}
+
+.btn:focus {
+    outline: none;
+}
+
